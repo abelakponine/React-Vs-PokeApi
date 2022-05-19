@@ -18,6 +18,10 @@ header h1 {
     padding: 0 20px;
     color: white;
 }
+#description table {
+    width: 100% !important;
+    margin: auto !important;
+}
 #description table body {
     background: none;
     color: white;
@@ -49,7 +53,7 @@ header h1 {
     position: absolute;
 }
 
-@media all and (max-width:795px){
+@media all and (max-width:850px){
     body {
         min-width: 420px;
     }

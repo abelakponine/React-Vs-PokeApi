@@ -28,7 +28,7 @@ class Home extends Component {
         event.preventDefault();
         window.$('#spinner').fadeIn(100);
         window.$('#search-input').blur();
-        
+
         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`).then(response=>{
             
             if (response.status !== 404){
@@ -44,7 +44,7 @@ class Home extends Component {
             }
             else {
                 window.$('#spinner').fadeOut(100);
-                alert(`Pokemon with name: ${this.state.query} not found!`);
+                alert(`Pokemon with name: ${this.capitalize(this.state.query)} not found!`);
             }
         });
     }
