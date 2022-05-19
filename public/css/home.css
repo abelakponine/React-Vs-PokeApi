@@ -14,6 +14,9 @@ header h1 {
     color: #08a2df;
     text-shadow: 0 0 25vw #000000e0;
 }
+.error-text {
+    color: #08a2df;
+}
 #description {
     padding: 0 20px;
     color: white;
