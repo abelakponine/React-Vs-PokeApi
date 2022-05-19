@@ -1,0 +1,66 @@
+html, body, #root, .container-fluid {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+.container-fluid {
+    overflow-y: auto;
+}
+header {
+    border-bottom: 1px solid #303030;
+}
+header h1 {
+    font-size: calc(18px + 1vw);
+    color: #08a2df;
+    text-shadow: 0 0 25vw #000000e0;
+}
+#description {
+    padding: 0 20px;
+    color: white;
+}
+#description table body {
+    background: none;
+    color: white;
+}
+#description td {
+    margin-top: 8px;
+    vertical-align: top;
+}
+#description table tbody td h2 {
+    display: inline-block;
+    background: #019728; /*#0c77b5;*/
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 6px 8px;
+}
+#description table tbody td span {
+    display: inline-block;
+    background: #101010;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 6px 8px;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+@media all and (max-width:795px){
+    body {
+        min-width: 420px;
+    }
+    #container, #element {
+        width: 100% !important;
+        flex-wrap: wrap;
+    }
+    #pokemon, #description {
+        width: 100% !important;
+        min-width: unset !important;
+        margin: auto !important;
+        border: 0 !important;
+    }
+}
