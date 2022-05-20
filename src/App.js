@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // -v 6.3.0
-import Home from "./views/home"
+import {BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom'; // -v 6.3.0
+import Home from "./Modules/Home";
+import { render } from '@testing-library/react';
 
-function App() {
+
+function App(props) {
   
   return (
     <Router>

@@ -1,13 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import Home from './views/home';
+import Home from './Modules/Home';
 
-test('renders learn react link', async () => {
-  
+test('Find pokemon element', ()=>{
   render(<Home/>);
-  
-  const linkElement = await screen.findByText((con, elem)=>{
-    return elem.id == 'pokemon';
-  });
-  console.log(linkElement.querySelector('label').textContent)
-  expect(linkElement.querySelector('label').textContent.toLowerCase()).toBe('pikachu');
+  setTimeout(()=>{
+      expect(screen.baseElement.querySelector('#pokemon')).toBeInTheDocument();
+  }, 2000)
 });
