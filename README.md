@@ -1,5 +1,4 @@
 # Getting Started with Create React App
-### [View Demo: https://pokeapi.pekaboom.com](https://pokeapi.pekaboom.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
